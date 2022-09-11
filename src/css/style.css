@@ -25,6 +25,45 @@
 
 body {
     font-family: 'Rubick';
+    cursor: url('https://snipp.ru/demo/712/pointer-1.cur') 4 1, auto;
+    background: #000;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+a {
+    cursor: url('https://snipp.ru/demo/712/pointer-3.cur') 4 1, pointer;
+}
+
+.up a {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 41% 0 0 95%;
+    border-radius: 50%;
+    background: #ffa60154;
+}
+
+.up img {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    margin: 0 0 5px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h2::first-letter {
+    color: #FFA501;
 }
 
 body::-webkit-scrollbar {
@@ -46,7 +85,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    cursor: pointer;
+    cursor: url(https://snipp.ru/demo/712/pointer-3.cur) 4 1, pointer;
 }
 
 .hamburger span {
@@ -91,7 +130,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 20px;
     left: 85%;
-    cursor: pointer;
+    cursor: url(https://snipp.ru/demo/712/pointer-3.cur) 4 1, pointer;
 }
 
 .menu-close span {
@@ -226,14 +265,16 @@ body::-webkit-scrollbar-thumb {
 
 .social {
     width: 50px;
-    height: auto;
+    height: 80%;
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .icon {    
     width: 40px;
     height: 40px;
-    margin: 15px 0;
     transition: ease .5s;
 }
 
@@ -242,7 +283,424 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.projects {
+ /* ABOUT */
+
+.about {
     width: 100%;
-    height: 300px;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    color: #fff;
+}
+
+.about-photo {
+    display: block;
+    border-radius: 200px 275px 150px 300px;
+}
+
+.about-info {
+    padding: 0 0 0 20px;
+}
+
+.about-info p {
+    font-size: 25px;
+}
+
+.about-job {
+    width: 100%;
+    height: 200px;
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-job h2{
+    font-size: 25px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFA501;
+}
+
+.circle img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.about-job p {
+    font-size: 20px;
+}
+
+
+
+.experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.experience h2 {
+    width: 90%;
+}
+
+.experience div {
+    color: #000;
+}
+
+.experience aside {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-wrap {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0 0 0;
+    display: flex;
+}
+
+.experience-production {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(21, 119, 126); */
+}
+
+.experience-production span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-products span {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.experience-wrap h2 {
+    font-size: 20px;
+}
+
+.experience-project {
+    width: 100%;
+    margin: 0 0 0 30px;
+    /* background: rgb(211, 25, 25); */
+}
+
+.grid-item {
+    background: #fff;
+}
+.container {  
+    width: 100%;
+    height: 510px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "item-1 item-1 item-3 item-3 item-3 item-3"
+        "item-1 item-1 item-2 item-6 item-6 item-6"
+        "item-4 item-4 item-2 item-6 item-6 item-6"
+        "item-4 item-4 item-2 item-5 item-9 item-9"
+        "item-4 item-4 item-8 item-8 item-9 item-9"
+        "item-7 item-7 item-8 item-8 item-9 item-9";
+  }
+  
+  .item-1 { grid-area: item-1; }
+  
+  .item-2 { grid-area: item-2; }
+  
+  .item-3 { grid-area: item-3; }
+  
+  .item-4 { grid-area: item-4; }
+  
+  .item-5 { grid-area: item-5; }
+  
+  .item-6 { grid-area: item-6; }
+  
+  .item-9 { grid-area: item-9; }
+  
+  .item-7 { grid-area: item-7; }
+  
+  .item-8 { grid-area: item-8; }
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+.grid-item:hover {
+    background: #FFA501;
+}
+
+.grid-item img {
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+}
+
+.grid-item:hover img {
+    width: 55px;
+    height: 55px;
+    transition: .2s;
+}
+
+.experience-item {
+    width: 210px;
+    height: 150px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    transition: .8s;
+}
+
+.experience-item:hover {
+    background: #FFA501;
+}
+
+.experience-item:hover img {
+    width: 60px;
+    height: 60px;
+}
+
+.experience-item img {
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+}
+
+.product {
+    width: 100%;
+}
+
+.skills {
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    color: #fff;
+}
+
+.skills-wrap h2{
+    font-size: 25px;
+}
+
+.skills-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.skills-percent {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    min-width: 45%;
+    margin: 0 0 5px 0;
+}
+
+.skills-item h2 {
+    font-size: 20px;
+}
+
+.skills-item p {
+    font-size: 25px;
+    color: #FFA501;
+}
+
+.skills-item span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-line {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    /* background: #FFA501;*/
+    background: rgb(92, 83, 83); 
+}
+
+.skills-progress {
+    height: 100%;
+    border-radius: 10px;
+    background: #FFA501;
+}
+
+.skills-item:nth-child(1) .skills-progress {
+    width: 80%;
+}
+
+.skills-item:nth-child(2) .skills-progress {
+    width: 80%;
+}
+
+.skills-item:nth-child(3) .skills-progress {
+    width: 50%;
+}
+
+.skills-item:nth-child(4) .skills-progress {
+    width: 40%;
+}
+
+.skills-item:nth-child(5) .skills-progress {
+    width: 30%;
+}
+
+.skills-item:nth-child(6) .skills-progress {
+    width: 30%;
+}
+
+
+.price {
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+    color:#fff;
+}
+
+.price-input h2 {
+    font-size: 25px;
+}
+
+.price span {
+    width: 30%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.price-wrap {
+    width: 50%;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-input {
+    width: 50%;
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.price-wrap div:first-child {
+    border-radius: 25px 0 0 25px;
+}
+
+.price-wrap div:last-child {
+    border-radius: 0 25px 25px 0;
+}
+
+.price-btn {
+    width: 100%;
+    height: 50px;
+    margin: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 900;
+    background: #fff;
+    color: #000;
+    cursor: url('https://snipp.ru/demo/712/pointer-3.cur') 4 1, pointer;
+}
+
+.btn-active {
+    background: #FFA501;
+}
+
+.number {
+    width: 70px;
+    height: 50px;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 15px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #FFA501;
+    cursor: url('https://snipp.ru/demo/712/pointer-3.cur') 4 1, pointer;
+}
+
+.sum-wrap {
+    display: flex;
+    margin: 15px 0 0 0;
+}
+
+.sum-wrap h2 {
+    font-size: 25px;
+}
+
+.sum {
+    width: 150px;
+    text-align: center;
+    border: 2px solid #FFA501;
+    border-radius: 10px;
+    cursor: url('https://snipp.ru/demo/712/pointer-3.cur') 4 1, pointer;
+}
+
+.total-price {
+    display: flex;
+    margin: 0 0 0 20px;
+    color: #FFA501;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.price-title {
+    margin: 0 0 0 10px;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: #FFA501;
+}
+
+.footer-wrap {
+    width: 20%;
+    margin: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
 }

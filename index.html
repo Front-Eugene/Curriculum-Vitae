@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,13 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Curriculum Vitae</title>
 </head>
-<body>
+
+<body id="up">
+    <section class="up">
+        <a href="#up">
+            <img src="./src/img/icons/up.png" alt="up">
+        </a>
+    </section>
 
     <section class="menu">
         <article class="menu-block">
@@ -19,16 +26,16 @@
             <nav>
                 <ul class="menu-list">
                     <li class="menu-link">
-                        <a href="#">about me</a>
+                        <a href="#">about</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">my experience</a>
+                        <a href="#">experience</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">my skills</a>
+                        <a href="#">skills</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">my projects</a>
+                        <a href="#">projects</a>
                     </li>
                     <li class="menu-link">
                         <a href="#">price list</a>
@@ -60,7 +67,7 @@
         </article>
         <article class="social">
             <a href="https://www.linkedin.com/in/eugenemorozenko/">
-                <img class="icon" src=".//src/img/icons/linkedin-1.png" alt="linkedin">
+                <img class="icon" src="./src/img/icons/linkedin-1.png" alt="linkedin">
             </a>
 
             <!-- <a href="https://github.com/Front-Eugene">
@@ -68,27 +75,323 @@
             </a> -->
 
             <a href="https://telegram.me/EMdevelop">
-                <img class="icon" src=".//src/img/icons/whatsapp.png" alt="whatsapp">
+                <img class="icon" src="./src/img/icons/whatsapp.png" alt="whatsapp">
             </a>
 
             <a href="https://telegram.me/EMdevelop">
-                <img class="icon" src=".//src/img/icons/telegram-1.png" alt="telegram">
+                <img class="icon" src="./src/img/icons/telegram-1.png" alt="telegram">
             </a>
 
             <a href="https://telegram.me/EMdevelop">
-                <img class="icon" src=".//src/img/icons/viber.png" alt="viber">
+                <img class="icon" src="./src/img/icons/viber.png" alt="viber">
             </a>
 
             <a href="https://telegram.me/EMdevelop">
-                <img class="icon" src=".//src/img/icons/email.png" alt="email">
+                <img class="icon" src="./src/img/icons/email.png" alt="email">
             </a>
         </article>
     </header>
+
     <main>
-        <section id="projects" class="projects">
-             
+        <section id="about" class="about">
+            <img class="about-photo" src="./src/img/face.JPG" alt="my_photo">
+            <article class="about-info">
+                <h2 class="section-title">about</h2>
+                <p>
+                    Front-end developer 2+ years experience. I create adaptive cross-platform websites for various
+                    devices. I use javascript for calculators, sliders, galleries and other logic. After creating the
+                    project install cms WordPress.
+                </p>
+                <article class="about-job">
+                    <div class="about-item">
+                        <h2>UI/UX Design</h2>
+                        <div class="circle">
+                            <img src="./src/img/icons/design.png" alt="UI/UX">
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <h2>Application Development</h2>
+                        <div class="circle">
+                            <img src="./src/img/icons/app.png" alt="application">
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <h2>Web development</h2>
+                        <div class="circle">
+                            <img src="./src/img/icons/web.png" alt="web">
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <section id="projects" class="experience">
+            <h2>experience</h2>
+            <article class="experience-wrap">
+                <article class="experience-production">
+                    <span class="experience-products">
+                        <h2>Poducts</h2>
+                        <span>
+                            <div class="experience-item product">
+                                <img src="./src/img/icons/pet.png" alt="pet">
+                                <p>pet</p>
+                            </div>
+                            <div class="experience-item product">
+                                <img src="./src/img/icons/library.png" alt="library">
+                                <p>web lib</p>
+                            </div>
+                            <div class="experience-item product">
+                                <img src="./src/img/icons/qr.png" alt="qr">
+                                <p>qr menu</p>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="experience-production">
+                        <h2>Poduction</h2>
+                        <span>
+                            <div class="experience-item">
+                                <img src="./src/img/icons/sofa.png" alt="sofa">
+                                <p>Soff.by</p>
+                            </div>
+                            <div class="experience-item">
+                                <img src="./src/img/icons/pillow.png" alt="pillow">
+                                <p>Pillow.by</p>
+                            </div>
+                            <div class="experience-item">
+                                <img src="./src/img/icons/fish.png" alt="fish">
+                                <p>smoked fish</p>
+                            </div>
+                            <div class="experience-item">
+                                <img src="./src/img/icons/underwear.png" alt="underwear">
+                                <p>underwear</p>
+                            </div>
+                        </span>
+                    </span>
+                </article>
+
+                <article class="experience-project">
+                    <h2>Pet-projects</h2>
+                    <div class='container'>
+                        <div class="grid-item item-1">
+                            <img src="./src/img/icons/underwear.png" alt="underwear">
+                            <p>underwear</p>
+                        </div>
+                        <div class="grid-item item-2">
+                            <img src="./src/img/icons/fish.png" alt="fish">
+                            <p>smoked fish</p>
+                        </div>
+                        <div class="grid-item item-3">
+                            <img src="./src/img/icons/pillow.png" alt="pillow">
+                            <p>Pillow.by</p>
+                        </div>
+                        <div class="grid-item item-4">
+                            <img src="./src/img/icons/sofa.png" alt="sofa">
+                            <p>Soff.by</p>
+                        </div>
+                        <div class="grid-item item-5">
+                            <img src="./src/img/icons/pet.png" alt="pet">
+                            <p>pet</p>
+                        </div>
+                        <div class="grid-item item-6">
+                            <img src="./src/img/icons/qr.png" alt="qr">
+                            <p>qr menu</p>
+                        </div>
+                        <div class="grid-item item-7">
+                            <img src="./src/img/icons/pillow.png" alt="pillow">
+                            <p>Pillow.by</p>
+                        </div>
+                        <div class="grid-item item-8">
+                            <img src="./src/img/icons/underwear.png" alt="underwear">
+                            <p>underwear</p>
+                        </div>
+                        <div class="grid-item item-9">
+                            <img src="./src/img/icons/sofa.png" alt="sofa">
+                            <p>Soff.by</p>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <section class="skills">
+            <h2>skills</h2>
+            <article class="skills-wrap">
+                <span>
+                    <div class="circle">
+                        <img src="./src/img/icons/html.png" alt="html">
+                    </div>
+                    <h2>html</h2>
+                </span>
+                <span>
+                    <div class="circle">
+                        <img src="./src/img/icons/css.png" alt="css">
+                    </div>
+                    <span>
+                        <h2>css sass</h2>
+                    </span>
+                </span>
+                <span>
+                    <div class="circle">
+                        <img src="./src/img/icons/js.png" alt="js">
+                    </div>
+                    <h2>javascript</h2>
+                </span>
+                <span>
+                    <div class="circle">
+                        <img src="./src/img/icons/react.png" alt="react">
+                    </div>
+                    <h2>react</h2>
+                </span>
+                <span>
+                    <div class="circle">
+                        <img src="./src/img/icons/sql.png" alt="sql">
+                    </div>
+                    <h2>mysql</h2>
+                </span>
+                <span>
+                    <div class="circle">
+                        <img src="./src/img/icons/wordpress.png" alt="wordpress">
+                    </div>
+                    <h2>wordpress</h2>
+                </span>
+            </article>
+            <article class="skills-percent">
+
+                <div class="skills-item">
+                    <span>
+                        <h2>html</h2>
+                        <p>80%</p>
+                    </span>
+                    <span class="skills-line">
+                        <div class="skills-progress"></div>
+                    </span>
+                </div>
+
+                <div class="skills-item">
+                    <span>
+                        <span>
+                            <h2>css sass</h2>
+                        </span>
+                        <p>80%</p>
+                    </span>
+                    <span class="skills-line">
+                        <div class="skills-progress"></div>
+                    </span>
+                </div>
+                <div class="skills-item">
+                    <span>
+                        <h2>javascript</h2>
+                        <p>50%</p>
+                    </span>
+                    <span class="skills-line">
+                        <div class="skills-progress"></div>
+                    </span>
+                </div>
+                <div class="skills-item">
+                    <span>
+                        <h2>react</h2>
+                        <p>40%</p>
+                    </span>
+                    <span class="skills-line">
+                        <div class="skills-progress"></div>
+                    </span>
+                </div>
+                <div class="skills-item">
+                    <span>
+                        <h2>mysql</h2>
+                        <p>30%</p>
+                    </span>
+                    <span class="skills-line">
+                        <div class="skills-progress"></div>
+                    </span>
+                </div>
+                <div class="skills-item">
+                    <span>
+                        <h2>wordpress</h2>
+                        <p>30%</p>
+                    </span>
+                    <span class="skills-line">
+                        <div class="skills-progress"></div>
+                    </span>
+                </div>
+            </article>
+        </section>
+
+        <section class="price">
+            <h2>price list</h2>
+            <article class="price-wrap">
+                <div class="price-btn btn-active" value="5">Landing-page</div>
+                <div class="price-btn" value="50">Corporate website</div>
+                <div class="price-btn" value="100">Online store</div>
+                <div class="price-btn" value="30">quiz site</div>
+            </article>
+
+            <article class="price-input">
+                <span>
+                    <input class="number page" type="number" min="0" value="0">
+                    <h2>pages</h2>
+                </span>
+
+                <span>
+                    <input class="number section" type="number" min="0" value="0">
+                    <h2>section</h2>
+                </span>
+    
+                <span>
+                    <input class="number slider" type="number" min="0" value="0">
+                    <h2>slider</h2>
+                </span>
+    
+                <span>
+                    <input class="number gallery" type="number" min="0" value="0">
+                    <h2>gallery</h2>
+                </span>
+    
+                <span>
+                    <input class="number calc" type="number" min="0" value="0">
+                    <h2>calc</h2>
+                </span>
+    
+                <span>
+                    <input class="number form" type="number" min="0" value="0">
+                    <h2>form</h2>
+                </span>
+            </article>
+
+            <article class="sum-wrap">
+                <h2 class="sum">Price</h2>
+                <div class="total-price"></div>
+            </article>
         </section>
     </main>
+    <footer class="footer">
+        <span class="footer-wrap">
+            <a href="https://www.linkedin.com/in/eugenemorozenko/">
+                <img class="icon" src="./src/img/icons/linkedin-1.png" alt="linkedin">
+            </a>
+    
+            <!-- <a href="https://github.com/Front-Eugene">
+                <img class="icon" src=".//src/img/icons/github-1.png" alt="github">
+            </a> -->
+    
+            <a href="https://telegram.me/EMdevelop">
+                <img class="icon" src="./src/img/icons/whatsapp.png" alt="whatsapp">
+            </a>
+    
+            <a href="https://telegram.me/EMdevelop">
+                <img class="icon" src="./src/img/icons/telegram-1.png" alt="telegram">
+            </a>
+    
+            <a href="https://telegram.me/EMdevelop">
+                <img class="icon" src="./src/img/icons/viber.png" alt="viber">
+            </a>
+    
+            <a href="https://telegram.me/EMdevelop">
+                <img class="icon" src="./src/img/icons/email.png" alt="email">
+            </a>
+        </span>
+    </footer>
     <script src="./src/js/script.js"></script>
 </body>
+
 </html>
