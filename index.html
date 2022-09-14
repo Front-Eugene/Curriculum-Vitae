@@ -26,22 +26,22 @@
             <nav>
                 <ul class="menu-list">
                     <li class="menu-link">
-                        <a href="#">about</a>
+                        <a href="#about">about</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">experience</a>
+                        <a href="#experience">experience</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">skills</a>
+                        <a href="#skills">skills</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">projects</a>
+                        <a href="#experience">projects</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">price list</a>
+                        <a href="#price">price list</a>
                     </li>
                     <li class="menu-link">
-                        <a href="#">contacts</a>
+                        <a href="#contacts">contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -55,17 +55,17 @@
     </section>
 
     <header class="header">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <article class="name">
             <p>Front-end developer</p>
             <a class="btn" href="#projects">portfolio</a>
             <a class="btn cv" href="./src/download/Morozenko_Eugene.pdf" download>CV pdf</a>
         </article>
         <article class="social">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <a href="https://www.linkedin.com/in/eugenemorozenko/">
                 <img class="icon" src="./src/img/icons/linkedin-1.png" alt="linkedin">
             </a>
@@ -125,12 +125,12 @@
             </article>
         </section>
 
-        <section id="projects" class="experience">
+        <section id="experience" class="experience">
             <h2>experience</h2>
             <article class="experience-wrap">
                 <article class="experience-production">
                     <span class="experience-products">
-                        <h2>Poducts</h2>
+                        <h2>Products</h2>
                         <span>
                             <div class="experience-item product">
                                 <img src="./src/img/icons/pet.png" alt="pet">
@@ -213,7 +213,7 @@
             </article>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>skills</h2>
             <article class="skills-wrap">
                 <span>
@@ -317,7 +317,7 @@
             </article>
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
             <h2>price list</h2>
             <article class="price-wrap">
                 <div class="price-btn btn-active" value="5">Landing-page</div>
@@ -328,12 +328,12 @@
 
             <article class="price-input">
                 <span>
-                    <input class="number page" type="number" min="0" value="0">
+                    <input class="number page" type="number" min="1" value="1">
                     <h2>pages</h2>
                 </span>
 
                 <span>
-                    <input class="number section" type="number" min="0" value="0">
+                    <input class="number section" type="number" min="3" value="3">
                     <h2>section</h2>
                 </span>
     
@@ -364,7 +364,8 @@
             </article>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
+        <h2>contacts:</h2>
         <span class="footer-wrap">
             <a href="https://www.linkedin.com/in/eugenemorozenko/">
                 <img class="icon" src="./src/img/icons/linkedin-1.png" alt="linkedin">

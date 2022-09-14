@@ -3,10 +3,18 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       menuClose = document.querySelector('.menu-close');
+      menuList = document.querySelectorAll('.menu-list a');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
     document.body.style.overflow = 'hidden';
+})
+
+menuList.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+        document.body.style.overflow = '';
+    })
 })
 
 menuClose.addEventListener('click', () => {

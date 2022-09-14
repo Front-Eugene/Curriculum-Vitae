@@ -76,11 +76,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hamburger {
-    width: 70px;
+    width: 50px;
     height: 50px;
-    top: 10px;
+    /* top: 10px;
     left: 94%;
-    position: absolute;
+    position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,7 +218,8 @@ body::-webkit-scrollbar-thumb {
 .header {
     width: 100%;
     height: 100vh;
-    padding: 50px 10px;
+    /* padding: 50px 10px; */
+    padding: 0 10px;
     font-size: 60px;
     font-weight: 900;
     display: flex;
@@ -232,7 +233,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .name {
-    margin: 25px 60px;
+    margin: 90px 60px 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -346,8 +347,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
 }
 
-
-
 .experience {
     width: 100%;
     display: flex;
@@ -452,6 +451,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 900;
     transition: .8s;
 }
 
@@ -479,6 +479,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: 900;
     background: #fff;
     transition: .8s;
 }
@@ -696,6 +697,15 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     background: #FFA501;
+}
+
+.footer h2 {
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.footer h2::first-letter {
+    color: #fff;
 }
 
 .footer-wrap {
