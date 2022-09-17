@@ -39,23 +39,6 @@ a {
     cursor: url('https://snipp.ru/demo/712/pointer-3.cur') 4 1, pointer;
 }
 
-.up a {
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 41% 0 0 95%;
-    border-radius: 50%;
-    background: #ffa60154;
-}
-
-.up img {
-    width: 30px;
-    height: 30px;
-}
-
 h2 {
     margin: 0 0 5px 0;
     font-size: 50px;
@@ -78,9 +61,6 @@ body::-webkit-scrollbar-thumb {
 .hamburger {
     width: 50px;
     height: 50px;
-    /* top: 10px;
-    left: 94%;
-    position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,7 +70,8 @@ body::-webkit-scrollbar-thumb {
 
 .hamburger span {
     display: block;
-    height: 8px;
+    height: 5px;
+    margin: 0px 0 5px 0;
     background: linear-gradient(90deg, #FFA501, #000);
 }
 
@@ -209,7 +190,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-overlay {
-    width: 100%;
+    width: 101%;
     height: 100vh;
     background: #fff;
     opacity: .7;
@@ -218,7 +199,6 @@ body::-webkit-scrollbar-thumb {
 .header {
     width: 100%;
     height: 100vh;
-    /* padding: 50px 10px; */
     padding: 0 10px;
     font-size: 60px;
     font-weight: 900;
@@ -380,7 +360,6 @@ body::-webkit-scrollbar-thumb {
     width: 450px;
     display: flex;
     flex-direction: column;
-    /* background: rgb(21, 119, 126); */
 }
 
 .experience-production span {
@@ -405,7 +384,6 @@ body::-webkit-scrollbar-thumb {
 .experience-project {
     width: 100%;
     margin: 0 0 0 30px;
-    /* background: rgb(211, 25, 25); */
 }
 
 .grid-item {
@@ -505,8 +483,8 @@ body::-webkit-scrollbar-thumb {
 
 .skills {
     width: 90%;
-    margin: 0 auto;
     height: 500px;
+    margin: 0 auto;
     color: #fff;
 }
 
@@ -554,7 +532,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 20px;
     border-radius: 10px;
-    /* background: #FFA501;*/
     background: rgb(92, 83, 83); 
 }
 
@@ -592,7 +569,7 @@ body::-webkit-scrollbar-thumb {
 .price {
     width: 90%;
     height: 350px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     color:#fff;
 }
 
@@ -713,4 +690,284 @@ body::-webkit-scrollbar-thumb {
     margin: 0 0 0 20px;
     display: flex;
     justify-content: space-between;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1024px) {
+    .about-job h2 {
+        font-size: 14px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container {
+        grid-template-areas:
+        "item-1 item-1 item-3 item-3 item-3 item-3"
+        "item-1 item-1 item-2 item-2 item-6 item-6"
+        "item-4 item-4 item-2 item-2 item-6 item-6"
+        "item-4 item-4 item-2 item-2 item-5 item-5"
+        "item-4 item-4 item-8 item-8 item-9 item-9"
+        "item-7 item-7 item-8 item-8 item-9 item-9";
+    }
+
+    .skills-wrap span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-btn {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .price-input h2 {
+        font-size: 15px;
+    }
+
+    .footer-wrap {
+        width: 30%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .name {
+        margin: 90px 20px 0 0;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+
+    .about-photo {
+        width: 300px;
+        height: 200px;
+    }
+
+    .container {
+        grid-template-areas:
+        "item-1 item-1 item-1 item-1 item-1 item-1"
+        "item-2 item-2 item-2 item-2 item-2 item-2"
+        "item-3 item-3 item-3 item-3 item-3 item-3"
+        "item-4 item-4 item-4 item-4 item-4 item-4"
+        "item-5 item-5 item-5 item-5 item-5 item-5"
+        "item-6 item-6 item-6 item-6 item-6 item-6"
+        "item-7 item-7 item-7 item-7 item-7 item-7"
+        "item-8 item-8 item-8 item-8 item-8 item-8"
+        "item-9 item-9 item-9 item-9 item-9 item-9";
+    }
+
+    .grid-item {
+        width: 100%;
+        height: 80px;
+    }
+
+    .experience {
+        height: 930px;
+    }
+
+    .experience-item {
+        height: 247px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skills-wrap h2 {
+        font-size: 15px;
+    }
+
+    .price-wrap {
+        width: 70%;
+    }
+
+    .price-input {
+        width: 70%;
+    }
+
+    .skills {
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .menu-close {
+        left: 150px;
+    }
+
+    .menu-social {
+        width: 70%;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+    
+    .btn {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .cv {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .about-photo {
+        display: none;
+    }
+    
+    .about {
+        height: auto;
+    }
+
+    .about-job {
+        height: 360px;
+        flex-direction: column;
+    }
+
+    .about-info p {
+        font-size: 20px;
+    }
+
+    .about-item .circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .experience {
+        height: 2350px;
+    }
+
+    .experience-project {
+        margin: 0;
+    }
+
+    .experience-production {
+        width: 100%;
+    }
+    
+    .container {
+        justify-items: center;
+    }
+
+    .grid-item {
+        width: 80%;
+        height: 100px;
+    }
+
+    .experience-wrap {
+        flex-direction: column;
+    }
+
+    .experience-products span {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-item {
+        height: 150px;
+        width: 250px;
+    }
+
+    .experience-production span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .skills {
+        height: auto;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .price-wrap {
+        width: 100%;
+    }
+
+    .price-input {
+        width: 100%;
+    }
+
+    .price-input h2 {
+        font-size: 12px;
+    }
+
+    .number {
+        margin: 0 5px 0 0;
+    }
+
+    .footer h2 {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+
+    .footer-wrap {
+        width: 65%;
+    }
+}   
+
+@media screen and (max-width: 375px) {
+    .menu-close {
+        left: 140px;
+    }
+
+    .number {
+        width: 55px;
+    }
+
+    .price-input span {
+        flex-direction: column;
+    }
+
+    .price-input h2 {
+        margin: 5px 0 0 0;
+    }
+
+    .skills-item h2 {
+        font-size: 15px;
+    }
+
+    .skills-item p {
+        font-size: 15px;
+    }
+
+    .price {
+        height: 380px;
+    }
+
+    .footer .icon {
+        width: 30px;
+        height: 30px; 
+    }
+
+    .header {
+        font-size: 20px;
+    }
 }
